@@ -24,12 +24,12 @@ const ArticleTemplate = ({ data }) => {
         <Link to={`/`}>&#8592; Home</Link>
       </div>
       <Img fixed={image.childImageSharp.fixed} />
-      <p>
+      {/* <p>
         by{" "}
         <Link to={`/authors/User_${created_by.firstname}`}>
           {created_by.firstname} {created_by.lastname}
         </Link>
-      </p>
+      </p> */}
       <h1 className={styles["page__title"]}>{title}</h1>
 
       <div>{content}</div>
@@ -44,7 +44,7 @@ export const query = graphql`
     strapiArticles(id: { eq: $id }) {
       title
       content
-      created_at
+      createdAt
       image {
         publicURL
         childImageSharp {
@@ -56,10 +56,6 @@ export const query = graphql`
             srcSet
           }
         }
-      }
-      created_by {
-        firstname
-        lastname
       }
     }
   }

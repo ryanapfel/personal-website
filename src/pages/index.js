@@ -28,12 +28,7 @@ export const pageQuery = graphql`
           id
           slug
           title
-          created_by {
-            firstname
-            lastname
-            id
-          }
-          created_at
+          createdAt
           image {
             id
             childImageSharp {
