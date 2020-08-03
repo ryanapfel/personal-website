@@ -1,0 +1,12 @@
+@import "./variables";
+@import "./mixins";
+
+.main {
+  flex: 1;
+  padding: 5em;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+}
