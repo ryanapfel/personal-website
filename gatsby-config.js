@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: "http://localhost:1337",
+        apiURL: "https://personal-core.cap.ryanapfel.com",
         contentTypes: [
           `articles`,
           `user`,
