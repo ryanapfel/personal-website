@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Feed from "../components/feed.js"
 

@@ -10,7 +10,10 @@ const Feed = ({ edges }) => (
     {edges.map(edge => (
       <div className={styles["feed__item"]} key={edge.node.id}>
         <div>
-          <Link className={styles["img__link"]} to={`/article/${edge.node.id}`}>
+          <Link
+            className={styles["img__link"]}
+            to={`/article/${edge.node.slug}`}
+          >
             <Img fixed={edge.node.image.childImageSharp.fixed} />
           </Link>
         </div>

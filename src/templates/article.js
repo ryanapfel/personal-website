@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import styles from "../scss/article.module.scss"
-import SEO from "../components/seo"
 
 //tit, desc, img, pathname, article, date
 const ArticleTemplate = ({ data }) => {
@@ -24,12 +23,7 @@ const ArticleTemplate = ({ data }) => {
         <Link to={`/`}>&#8592; Home</Link>
       </div>
       <Img fixed={image.childImageSharp.fixed} />
-      {/* <p>
-        by{" "}
-        <Link to={`/authors/User_${created_by.firstname}`}>
-          {created_by.firstname} {created_by.lastname}
-        </Link>
-      </p> */}
+
       <h1 className={styles["page__title"]}>{title}</h1>
 
       <div>{content}</div>

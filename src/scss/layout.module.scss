@@ -2,11 +2,21 @@
 @import "./mixins";
 
 .main {
-  flex: 1;
   padding: 5em;
+  @include breakpoint-sm {
+    padding: 2em;
+    margin: 0 auto;
+  }
 }
 
 .layout {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-template-rows: 100vh;
+
+  @include breakpoint-sm {
+    display: inline-grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+  }
 }

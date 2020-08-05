@@ -22,6 +22,9 @@
 
 .contacts {
   @include margin-bottom(1);
+  @include breakpoint-sm {
+    display: none;
+  }
 
   &__list {
     display: flex;

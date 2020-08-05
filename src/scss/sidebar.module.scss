@@ -2,32 +2,32 @@
 @import "./mixins";
 
 .sidebar {
-  width: 25%;
-  height: 100vhxxc;
   padding-left: 5em;
   &__inner {
     position: none;
     padding: 25px 20px 0;
+    @include breakpoint-sm {
+      display: inline-grid;
+      grid-template-columns: 60% auto 20%;
+      grid-template-rows: 100px;
+      padding: 10px;
+      width: 100%;
+      align-items: center;
+      align-content: center;
+      border: 1px solid $color-gray-border;
+    }
   }
-  &:after {
-    background: $color-gray-border;
-    background: linear-gradient(
-      to bottom,
-      $color-gray-border 0%,
-      $color-gray-border 48%,
-      $color-white 100%
-    );
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 540px;
-    top: 30px;
-    right: -10px;
-    bottom: 0;
+  @include breakpoint-sm {
+    padding-left: 0;
   }
 }
 
 .author {
+  @include breakpoint-sm {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
   &__photo {
     display: inline-block;
     margin-bottom: 0;
@@ -55,11 +55,17 @@
     color: $color-gray;
     @include line-height(1);
     @include margin-bottom(1);
+    @include breakpoint-sm {
+      display: none;
+    }
   }
 }
 
 .menu {
   @include margin-bottom(1);
+  @include breakpoint-sm {
+    display: none;
+  }
 
   &__list {
     list-style: none;

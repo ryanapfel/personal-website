@@ -2,7 +2,7 @@ const siteConfig = require("./config.js")
 
 module.exports = {
   siteMetadata: {
-    url: "https://lumen.netlify.com",
+    url: "https://dazzling-neumann-1251df.netlify.appm",
     pathPrefix: "/",
     title: "Ryan Apfel Personal Website",
     subtitle: "A place to share my thoughts and feelings",
@@ -13,8 +13,7 @@ module.exports = {
     googleAnalyticsId: "UA-73379983-2",
     author: {
       name: "Ryan Apfel",
-      bio:
-        "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.",
+      bio: "Ryan Apfel",
     },
   },
   plugins: [

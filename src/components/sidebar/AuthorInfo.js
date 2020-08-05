@@ -15,7 +15,7 @@ const AuthorInfo = ({ children }) => {
 
   return (
     <>
-      <h1 className={styles["author__title"]}>Ryan Apfel</h1>
+      <h2 className={styles["author__title"]}>Ryan Apfel</h2>
 
       <p className={styles["author__subtitle"]}>{data.strapiAsset.alt}</p>
     </>
