@@ -25,7 +25,7 @@ const SEO = ({ tit, desc, img, pathname, article, date }) => {
     title: tit || title,
     description: desc || subtitle,
     image: `${url}${img || publicURL}`,
-    path: `${url}${pathname || ""}`,
+    path: `${url}/${pathname || ""}`,
     date: date || buildTime,
   }
 

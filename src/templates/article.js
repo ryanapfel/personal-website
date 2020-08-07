@@ -7,7 +7,7 @@ import styles from "../scss/article.module.scss"
 //tit, desc, img, pathname, article, date
 const ArticleTemplate = ({ data }) => {
   const {
-    strapiArticles: { title, content, image, created_by, created_at },
+    strapiArticles: { title, content, image, created_at, slug },
   } = data
 
   return (
@@ -15,7 +15,7 @@ const ArticleTemplate = ({ data }) => {
       tit={title}
       desc={content}
       img={image.publicURL}
-      pathname={title}
+      pathname={slug}
       article={true}
       date={created_at}
     >
@@ -37,6 +37,7 @@ export const query = graphql`
   query ArticleTemplate($id: String!) {
     strapiArticles(id: { eq: $id }) {
       title
+      slug
       content
       createdAt
       image {

@@ -2,7 +2,7 @@ const siteConfig = require("./config.js")
 
 module.exports = {
   siteMetadata: {
-    url: "https://dazzling-neumann-1251df.netlify.appm",
+    url: "https://dazzling-neumann-1251df.netlify.app",
     pathPrefix: "/",
     title: "Ryan Apfel Personal Website",
     subtitle: "A place to share my thoughts and feelings",
